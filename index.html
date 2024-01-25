@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXP</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <div class="wrap">
+        <header>
+    <!-- Navbar -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#"> 
+                        <img src="img/logo.svg" alt="">
+                    </a> 
+                </div>
+                <ul class="menu">
+                    <div class="menu__first-side"> 
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About us</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Our Goals</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contacts</a></li>
+                    </div>
+                    <li class="menu__item menu__item-alternative">
+                        <a href="#" class="menu__item-button-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="material-symbols:ads-click">
+                                <path id="Vector" d="M11.7 18C10.1 17.9167 8.75 17.3 7.65 16.15C6.55 15 6 13.6167 6 12C6 10.3333 6.58333 8.91667 7.75 7.75C8.91667 6.58333 10.3333 6 12 6C13.6167 6 15 6.55 16.15 7.65C17.3 8.75 17.9167 10.1 18 11.7L15.9 11.075C15.6833 10.175 15.2167 9.43767 14.5 8.863C13.7833 8.28833 12.95 8.00067 12 8C10.9 8 9.95833 8.39167 9.175 9.175C8.39167 9.95833 8 10.9 8 12C8 12.95 8.28767 13.7833 8.863 14.5C9.43833 15.2167 10.1757 15.6833 11.075 15.9L11.7 18ZM12.9 21.95C12.75 21.9833 12.6 22 12.45 22H12C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12V12.45C22 12.6 21.9833 12.75 21.95 12.9L20 12.3V12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20H12.3L12.9 21.95ZM20.525 22.5L16.25 18.225L15 22L12 12L22 15L18.225 16.25L22.5 20.525L20.525 22.5Z" fill="#9145FD"/>
+                                </g>
+                            </svg>
+                            <p>Go to projects</p>
+                        </a>
+                        <a href="#" class="menu__item-button-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="basil:book-open-outline">
+                                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M11.602 18.6361C11.7218 18.7093 11.8597 18.7474 12 18.7461C12.1403 18.7474 12.2782 18.7093 12.398 18.6361L13.533 17.9551C14.6313 17.2961 15.8671 16.8999 17.1439 16.7976C18.4206 16.6952 19.7037 16.8895 20.893 17.3651C21.783 17.7211 22.75 17.0651 22.75 16.1081V4.45012C22.75 3.87212 22.398 3.35312 21.861 3.13812C20.3292 2.52545 18.6765 2.27526 17.0319 2.4071C15.3874 2.53894 13.7956 3.04923 12.381 3.89812L12 4.12412L11.618 3.89512C10.2034 3.04623 8.61159 2.53594 6.96707 2.4041C5.32255 2.27226 3.66982 2.52245 2.138 3.13512C1.87536 3.24023 1.65031 3.42175 1.49199 3.6562C1.33367 3.89065 1.24937 4.16722 1.25 4.45012V16.1101C1.25 17.0671 2.217 17.7221 3.107 17.3661C4.29626 16.8905 5.57939 16.6962 6.85615 16.7986C8.13291 16.9009 9.36871 17.2971 10.467 17.9561L11.602 18.6361ZM2.75 4.50812V15.8951C4.13205 15.3772 5.61316 15.1778 7.08297 15.3118C8.55279 15.4458 9.97342 15.9098 11.239 16.6691L11.25 16.6751V5.42512L10.847 5.18312C9.6391 4.45827 8.28088 4.02047 6.87705 3.90344C5.47322 3.78641 4.06126 3.99328 2.75 4.50812ZM12.761 16.6681L12.75 16.6751V5.42512L13.153 5.18312C14.3609 4.45827 15.7191 4.02047 17.123 3.90344C18.5268 3.78641 19.9388 3.99328 21.25 4.50812V15.8951C19.868 15.3772 18.3868 15.1778 16.917 15.3118C15.4472 15.4458 14.0266 15.9098 12.761 16.6691V16.6681Z" fill="white"/>
+                                <path id="Vector_2" d="M9.27519 19.0421C8.28115 18.4623 7.15098 18.1567 6.00019 18.1567C4.8494 18.1567 3.71924 18.4623 2.72519 19.0421L2.62219 19.1021C2.5371 19.1517 2.46261 19.2176 2.40299 19.2961C2.34336 19.3745 2.29977 19.4639 2.2747 19.5592C2.24963 19.6544 2.24357 19.7537 2.25686 19.8513C2.27016 19.9489 2.30255 20.043 2.35219 20.1281C2.40183 20.2132 2.46775 20.2877 2.54617 20.3473C2.6246 20.4069 2.714 20.4505 2.80927 20.4756C2.90455 20.5006 3.00382 20.5067 3.10144 20.4934C3.19905 20.4801 3.2931 20.4477 3.37819 20.3981L3.48119 20.3381C4.24579 19.8922 5.11506 19.6572 6.00019 19.6572C6.88533 19.6572 7.7546 19.8922 8.51919 20.3381L9.60719 20.9721C10.3335 21.3957 11.1593 21.6189 12.0002 21.6189C12.841 21.6189 13.6668 21.3957 14.3932 20.9721L15.4812 20.3381C16.2458 19.8922 17.1151 19.6572 18.0002 19.6572C18.8853 19.6572 19.7546 19.8922 20.5192 20.3381L20.6222 20.3981C20.7941 20.4983 20.9987 20.5262 21.1911 20.4756C21.3835 20.4249 21.5479 20.2999 21.6482 20.1281C21.7484 19.9562 21.7763 19.7516 21.7257 19.5592C21.6751 19.3668 21.5501 19.2023 21.3782 19.1021L21.2752 19.0421C20.2811 18.4623 19.151 18.1567 18.0002 18.1567C16.8494 18.1567 15.7192 18.4623 14.7252 19.0421L13.6382 19.6761C13.1411 19.9662 12.5758 20.119 12.0002 20.119C11.4246 20.119 10.8593 19.9662 10.3622 19.6761L9.27519 19.0421Z" fill="white"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                    <button class="burger">
+                        <span class="burger-1"></span>
+                        <span class="burger-2"></span>
+                        <span class="burger-3"></span>
+                    </button>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- Main Page -->
+        <section id="intro" class="intro">
+    <div class="banner">
+        <div class="banner__overlay"></div>
+        <div class="banner__wrapper">
+            <div class="banner__item">
+                SECURITY
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                BOT-MITIGATION
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                SECURITY
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                BOT-MITIGATION
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+        </div>
+        <div class="banner__wrapper">
+            <div class="banner__item">
+                SECURITY
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                BOT-MITIGATION
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                SECURITY
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                FAULT-TOLERANCE
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+            <div class="banner__item">
+                BOT-MITIGATION
+            </div>
+            <div class="banner__item">
+                <img src="img/banner-icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="intro__body">
+            <div class="intro__textbox">
+                <div class="left__planet">
+                    <img src="img/planet-left.png" alt="">
+                </div>
+                <div class="left__planet-2">
+                    <img src="img/planet-left-2.png" alt="">
+                </div>
+                <h1 class="intro__title">Where security meets </br> <span>Innovation</span></h1>
+                <div class="right__planet">
+                    <img src="img/planet-right.png" alt="">
+                </div>
+                <div class="right__planet-2">
+                    <img src="img/planet-right-2.png" alt="">
+                </div>
+            </div>
+            <div class="intro__buttons">
+                <div class="intro__buttons-1">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M11.7 18.7678C10.1 18.6845 8.75 18.0678 7.65 16.9178C6.55 15.7678 6 14.3845 6 12.7678C6 11.1012 6.58333 9.68449 7.75 8.51782C8.91667 7.35116 10.3333 6.76782 12 6.76782C13.6167 6.76782 15 7.31782 16.15 8.41782C17.3 9.51782 17.9167 10.8678 18 12.4678L15.9 11.8428C15.6833 10.9428 15.2167 10.2055 14.5 9.63082C13.7833 9.05616 12.95 8.76849 12 8.76782C10.9 8.76782 9.95833 9.15949 9.175 9.94282C8.39167 10.7262 8 11.6678 8 12.7678C8 13.7178 8.28767 14.5512 8.863 15.2678C9.43833 15.9845 10.1757 16.4512 11.075 16.6678L11.7 18.7678ZM12.9 22.7178C12.75 22.7512 12.6 22.7678 12.45 22.7678H12C10.6167 22.7678 9.31667 22.5052 8.1 21.9798C6.88333 21.4545 5.825 20.7422 4.925 19.8428C4.025 18.9428 3.31267 17.8845 2.788 16.6678C2.26333 15.4512 2.00067 14.1512 2 12.7678C2 11.3845 2.26267 10.0845 2.788 8.86782C3.31333 7.65116 4.02567 6.59282 4.925 5.69282C5.825 4.79282 6.88333 4.08049 8.1 3.55582C9.31667 3.03116 10.6167 2.76849 12 2.76782C13.3833 2.76782 14.6833 3.03049 15.9 3.55582C17.1167 4.08116 18.175 4.79349 19.075 5.69282C19.975 6.59282 20.6877 7.65116 21.213 8.86782C21.7383 10.0845 22.0007 11.3845 22 12.7678V13.2178C22 13.3678 21.9833 13.5178 21.95 13.6678L20 13.0678V12.7678C20 10.5345 19.225 8.64282 17.675 7.09282C16.125 5.54282 14.2333 4.76782 12 4.76782C9.76667 4.76782 7.875 5.54282 6.325 7.09282C4.775 8.64282 4 10.5345 4 12.7678C4 15.0012 4.775 16.8928 6.325 18.4428C7.875 19.9928 9.76667 20.7678 12 20.7678H12.3L12.9 22.7178ZM20.525 23.2678L16.25 18.9928L15 22.7678L12 12.7678L22 15.7678L18.225 17.0178L22.5 21.2928L20.525 23.2678Z" fill="#FF6914"/>
+                        </svg>
+                       <p> Go to projects</p>
+                    </a>
+                </div>
+                <div class="intro__buttons-2">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.602 19.4039C11.7218 19.4771 11.8597 19.5152 12 19.5139C12.1403 19.5152 12.2782 19.4771 12.398 19.4039L13.533 18.7229C14.6313 18.0639 15.8671 17.6677 17.1439 17.5654C18.4206 17.463 19.7037 17.6573 20.893 18.1329C21.783 18.4889 22.75 17.8329 22.75 16.8759V5.21794C22.75 4.63994 22.398 4.12094 21.861 3.90594C20.3292 3.29327 18.6765 3.04308 17.0319 3.17492C15.3874 3.30676 13.7956 3.81706 12.381 4.66594L12 4.89194L11.618 4.66294C10.2034 3.81406 8.61159 3.30376 6.96707 3.17192C5.32255 3.04008 3.66982 3.29027 2.138 3.90294C1.87536 4.00805 1.65031 4.18957 1.49199 4.42402C1.33367 4.65847 1.24937 4.93504 1.25 5.21794V16.8779C1.25 17.8349 2.217 18.4899 3.107 18.1339C4.29626 17.6583 5.57939 17.464 6.85615 17.5664C8.13291 17.6687 9.36871 18.0649 10.467 18.7239L11.602 19.4039ZM2.75 5.27594V16.6629C4.13205 16.145 5.61316 15.9456 7.08297 16.0796C8.55279 16.2136 9.97342 16.6776 11.239 17.4369L11.25 17.4429V6.19294L10.847 5.95094C9.6391 5.2261 8.28088 4.78829 6.87705 4.67126C5.47322 4.55423 4.06126 4.7611 2.75 5.27594ZM12.761 17.4359L12.75 17.4429V6.19294L13.153 5.95094C14.3609 5.2261 15.7191 4.78829 17.123 4.67126C18.5268 4.55423 19.9388 4.7611 21.25 5.27594V16.6629C19.868 16.145 18.3868 15.9456 16.917 16.0796C15.4472 16.2136 14.0266 16.6776 12.761 17.4369V17.4359Z" fill="#9145FD"/>
+                            <path d="M9.27519 19.8099C8.28115 19.2301 7.15098 18.9246 6.00019 18.9246C4.8494 18.9246 3.71924 19.2301 2.72519 19.8099L2.62219 19.8699C2.5371 19.9195 2.46261 19.9855 2.40299 20.0639C2.34336 20.1423 2.29977 20.2317 2.2747 20.327C2.24963 20.4223 2.24357 20.5215 2.25686 20.6192C2.27016 20.7168 2.30255 20.8108 2.35219 20.8959C2.40183 20.981 2.46775 21.0555 2.54617 21.1151C2.6246 21.1747 2.714 21.2183 2.80927 21.2434C2.90455 21.2685 3.00382 21.2745 3.10144 21.2612C3.19905 21.2479 3.2931 21.2155 3.37819 21.1659L3.48119 21.1059C4.24579 20.66 5.11506 20.425 6.00019 20.425C6.88533 20.425 7.7546 20.66 8.51919 21.1059L9.60719 21.7399C10.3335 22.1635 11.1593 22.3867 12.0002 22.3867C12.841 22.3867 13.6668 22.1635 14.3932 21.7399L15.4812 21.1059C16.2458 20.66 17.1151 20.425 18.0002 20.425C18.8853 20.425 19.7546 20.66 20.5192 21.1059L20.6222 21.1659C20.7941 21.2662 20.9987 21.294 21.1911 21.2434C21.3835 21.1928 21.5479 21.0678 21.6482 20.8959C21.7484 20.724 21.7763 20.5194 21.7257 20.327C21.6751 20.1346 21.5501 19.9702 21.3782 19.8699L21.2752 19.8099C20.2811 19.2301 19.151 18.9246 18.0002 18.9246C16.8494 18.9246 15.7192 19.2301 14.7252 19.8099L13.6382 20.4439C13.1411 20.734 12.5758 20.8869 12.0002 20.8869C11.4246 20.8869 10.8593 20.734 10.3622 20.4439L9.27519 19.8099Z" fill="#9145FD"/>
+                        </svg>
+                        <p>Read our blog</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    <section id="projects" class="projects">
+    <div class="container">
+        <div class="projects__body">
+            <div class="projects__textbox">
+                <h2>Latest <span>projects</span></h2>
+                <p>Embark on a journey into the heart of cybersecurity innovation with exploit.org. <br>Our latest projects showcase groundbreaking solutions designed to tackle the digital world's evolving threats.
+                    Robust, secure, innovative.
+                </p>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11.7 18C10.1 17.9167 8.75 17.3 7.65 16.15C6.55 15 6 13.6167 6 12C6 10.3333 6.58333 8.91667 7.75 7.75C8.91667 6.58333 10.3333 6 12 6C13.6167 6 15 6.55 16.15 7.65C17.3 8.75 17.9167 10.1 18 11.7L15.9 11.075C15.6833 10.175 15.2167 9.43767 14.5 8.863C13.7833 8.28833 12.95 8.00067 12 8C10.9 8 9.95833 8.39167 9.175 9.175C8.39167 9.95833 8 10.9 8 12C8 12.95 8.28767 13.7833 8.863 14.5C9.43833 15.2167 10.1757 15.6833 11.075 15.9L11.7 18ZM12.9 21.95C12.75 21.9833 12.6 22 12.45 22H12C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12V12.45C22 12.6 21.9833 12.75 21.95 12.9L20 12.3V12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20H12.3L12.9 21.95ZM20.525 22.5L16.25 18.225L15 22L12 12L22 15L18.225 16.25L22.5 20.525L20.525 22.5Z" fill="white"/>
+                      </svg>
+                      <p>Go to projects</p>
+                </a>
+            </div>
+            <div class="projects__swiper">
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="projects__swiper-item swiper1__item-1">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Advanced Security framework for Netty Servers</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>NetArmor</p>
+                        </div>
+                        <div class="projects__swiper-item swiper1__item-2">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Powerful, secure, reactive cryptocurrency protocols in Java</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>Coin4J</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects__swiper-item swiper1__item-1">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Advanced Security framework for Netty Servers</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>NetArmor</p>
+                        </div>
+                        <div class="projects__swiper-item swiper1__item-2">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Powerful, secure, reactive cryptocurrency protocols in Java</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>Coin4J</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects__swiper-item swiper1__item-1">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Advanced Security framework for Netty Servers</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>NetArmor</p>
+                        </div>
+                        <div class="projects__swiper-item swiper1__item-2">
+                            <div class="projects__swiper-container">
+                                <div class="projects__swiper-rec">
+                                    <div></div>
+                                </div>
+                                <div class="projects__swiper-textbox">
+                                    <p>Powerful, secure, reactive cryptocurrency protocols in Java</p>
+                                    <a href="#">
+                                        <p>View more info</p>
+                                        <img src="img/arrow.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <p>Coin4J</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper__manage">
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="opinion" class="opinion">
+    <div class="container">
+        <div class="opinion__body">
+            <div class="opinion__swiper">
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="opinion__swiper-item">
+                                <div class="opinion__swiper-upper">
+                                    <div class="opinion__swiper-rec">
+                                        <div></div>
+                                    </div>
+                                    <p class="opinion__swiper-site">exploit.org</p>
+                                </div>
+                                <div class="opinion__swiper-textbox">
+                                    <h3>Lorem<br>Ipsum lorem</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in mollis ligula, pellentesque facilisis lacus. Fusce scelerisque elit tempus, maximus ex et, convallis.hendrerit, scelerisque augue ut, bibendum eros. Vivamus semper odio vitae nibh pharetra, Donec dignissim in lacus non euismod... 
+                                        <a href="#">Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="opinion__swiper-item">
+                                <div class="opinion__swiper-upper">
+                                    <div class="opinion__swiper-rec">
+                                        <div></div>
+                                    </div>
+                                    <p class="opinion__swiper-site">exploit.org</p>
+                                </div>
+                                <div class="opinion__swiper-textbox">
+                                    <h3>Lorem<br>Ipsum lorem</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in mollis ligula, pellentesque facilisis lacus. Fusce scelerisque elit tempus, maximus ex et, convallis.hendrerit, scelerisque augue ut, bibendum eros. Vivamus semper odio vitae nibh pharetra, Donec dignissim in lacus non euismod... 
+                                        <a href="#">Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="opinion__swiper-item">
+                                <div class="opinion__swiper-upper">
+                                    <div class="opinion__swiper-rec">
+                                        <div></div>
+                                    </div>
+                                    <p class="opinion__swiper-site">exploit.org</p>
+                                </div>
+                                <div class="opinion__swiper-textbox">
+                                    <h3>Lorem<br>Ipsum lorem</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in mollis ligula, pellentesque facilisis lacus. Fusce scelerisque elit tempus, maximus ex et, convallis.hendrerit, scelerisque augue ut, bibendum eros. Vivamus semper odio vitae nibh pharetra, Donec dignissim in lacus non euismod... 
+                                        <a href="#">Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper__manage">
+                    <div class="swiper-pagination swiper-pagination2"></div>
+                </div>
+            </div>
+            <div class="opinion__textbox">
+                <h2>Opinion <span>pieces</span></h2>
+                <p>Join us in exploring cutting-edge trends and insights through our exclusive collection of expert-authored articles. Gain valuable knowledge and practical tips to safeguard your digital landscape. Stay informed, stay secure.
+                </p>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.602 19.4037C11.7218 19.4769 11.8597 19.515 12 19.5137C12.1403 19.515 12.2782 19.4769 12.398 19.4037L13.533 18.7227C14.6313 18.0637 15.8671 17.6675 17.1439 17.5651C18.4206 17.4628 19.7037 17.657 20.893 18.1327C21.783 18.4887 22.75 17.8327 22.75 16.8757V5.21769C22.75 4.63969 22.398 4.12069 21.861 3.90569C20.3292 3.29303 18.6765 3.04284 17.0319 3.17468C15.3874 3.30652 13.7956 3.81681 12.381 4.66569L12 4.89169L11.618 4.66269C10.2034 3.81381 8.61159 3.30351 6.96707 3.17168C5.32255 3.03984 3.66982 3.29003 2.138 3.90269C1.87536 4.0078 1.65031 4.18933 1.49199 4.42378C1.33367 4.65823 1.24937 4.9348 1.25 5.21769V16.8777C1.25 17.8347 2.217 18.4897 3.107 18.1337C4.29626 17.658 5.57939 17.4638 6.85615 17.5661C8.13291 17.6685 9.36871 18.0647 10.467 18.7237L11.602 19.4037ZM2.75 5.27569V16.6627C4.13205 16.1447 5.61316 15.9453 7.08297 16.0794C8.55279 16.2134 9.97342 16.6773 11.239 17.4367L11.25 17.4427V6.19269L10.847 5.95069C9.6391 5.22585 8.28088 4.78804 6.87705 4.67101C5.47322 4.55398 4.06126 4.76086 2.75 5.27569ZM12.761 17.4357L12.75 17.4427V6.19269L13.153 5.95069C14.3609 5.22585 15.7191 4.78804 17.123 4.67101C18.5268 4.55398 19.9388 4.76086 21.25 5.27569V16.6627C19.868 16.1447 18.3868 15.9453 16.917 16.0794C15.4472 16.2134 14.0266 16.6773 12.761 17.4367V17.4357Z" fill="white"/>
+                        <path d="M9.27519 19.8097C8.28115 19.2298 7.15098 18.9243 6.00019 18.9243C4.8494 18.9243 3.71924 19.2298 2.72519 19.8097L2.62219 19.8697C2.5371 19.9193 2.46261 19.9852 2.40299 20.0636C2.34336 20.1421 2.29977 20.2315 2.2747 20.3267C2.24963 20.422 2.24357 20.5213 2.25686 20.6189C2.27016 20.7165 2.30255 20.8106 2.35219 20.8957C2.40183 20.9808 2.46775 21.0552 2.54617 21.1149C2.6246 21.1745 2.714 21.2181 2.80927 21.2432C2.90455 21.2682 3.00382 21.2743 3.10144 21.261C3.19905 21.2477 3.2931 21.2153 3.37819 21.1657L3.48119 21.1057C4.24579 20.6597 5.11506 20.4248 6.00019 20.4248C6.88533 20.4248 7.7546 20.6597 8.51919 21.1057L9.60719 21.7397C10.3335 22.1633 11.1593 22.3865 12.0002 22.3865C12.841 22.3865 13.6668 22.1633 14.3932 21.7397L15.4812 21.1057C16.2458 20.6597 17.1151 20.4248 18.0002 20.4248C18.8853 20.4248 19.7546 20.6597 20.5192 21.1057L20.6222 21.1657C20.7941 21.2659 20.9987 21.2938 21.1911 21.2432C21.3835 21.1925 21.5479 21.0675 21.6482 20.8957C21.7484 20.7238 21.7763 20.5192 21.7257 20.3267C21.6751 20.1343 21.5501 19.9699 21.3782 19.8697L21.2752 19.8097C20.2811 19.2298 19.151 18.9243 18.0002 18.9243C16.8494 18.9243 15.7192 19.2298 14.7252 19.8097L13.6382 20.4437C13.1411 20.7338 12.5758 20.8866 12.0002 20.8866C11.4246 20.8866 10.8593 20.7338 10.3622 20.4437L9.27519 19.8097Z" fill="white"/>
+                      </svg>
+                      <p>Read our blog</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="join" class="join">
+    <div class="join__content">
+        <img src="img/reddit-logo.svg" alt="reddit">
+        <h4>Join us at Reddit</h4>
+        <a href="#">Open Reddit</a>
+    </div>
+    
+    <div class="join__body">
+        <div class="join__left">
+            <p class="join__left-tag">@exploitred</p>
+            <p class="join__left-tag-2">@exploitred</p>
+        </div>
+        <div class="join__right">
+            <p class="join__right-tag">@exploitred</p>
+            <p class="join__right-tag-2">@exploitred</p>
+        </div>
+    </div>
+</section>
+    <section id="quote" class="quote">
+    <div class="quote__cat">
+        <img src="img/git-cat-upper.svg" alt="git cat">
+    </div>
+    <div class="container">
+        <div class="quote__body">
+            <div class="quote__quotes">
+                <img src="img/quote-left.svg" alt="">
+                <img src="img/quote-right.svg" alt="">
+            </div>
+            <p class="quote__textbox">
+                75% of hacking incidents are due to vulnerabilities at the application level
+            </p>
+            <div class="quote__owasp">
+                <div class="quote__owasp-rec"></div>
+                <p>OWASP</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="git" class="git">
+    <div class="git__cat">
+        <img src="img/git-cat.svg" alt="git cat">
+    </div>
+    <div class="container-2">
+        <div class="git__body">
+            <div class="git__illustration">
+                <img src="img/github-illustration.webp" alt="">
+            </div>
+            
+            <div class="git__content">
+                <h2>Free. Opensource. <span>Forever.</span></h2>
+                <a href="#">Check our <span>Github</span></a>
+            </div>
+            <div class="git__illustration-mobile">
+                <img src="img/github-illustration-mobile.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__body">
+            <div class="footer__st">
+                <div class="footer__logo">
+                    <img src="img/logo.svg" alt="EXPLOIT">
+                </div>
+                <p>
+                    Where security meets <span>innovation</span>
+                </p>
+                <p class="footer__copy">
+                    EXPLOIT <br>
+                    ©Copyright 2023. All rights reserved.
+                </p>
+            </div>
+            <div class="footer__nd">
+                <ul class="footer__list">
+                    <li class="footer__list-item">HOME</li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Latest projects</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Opinion pieces</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Label 1</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">SOCIALS</li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Label 1</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Label 2</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Label 3</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">COMPANY</li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Terms of Service</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">CONTACTS</li>
+                    <li class="footer__list-item list__item-labeling"><p>Support inbox</p><a href="" class="footer__link">contact@exploit.org</a></li>
+                    <li class="footer__list-item list__item-labeling"><p>Security inbox</p><a href="" class="footer__link">security@exploit.org</a></li>
+                </ul>
+                
+                <!-- 
+                    <div class="accordion__item">
+                            <div class="accordion__item-trigger">
+                                <div class="trigger__text">Аккордеон триггер</div>
+                                <div class="trigger__img">
+                                    <span class="trigger__line-1"></span>
+                                    <span class="trigger__line-2"></span>
+                                </div>
+                            </div>
+                            <div class="accordion__item-content">
+                                <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__item-trigger">
+                                <div class="trigger__text">Аккордеон триггер</div>
+                                <div class="trigger__img">
+                                    <span class="trigger__line-1"></span>
+                                    <span class="trigger__line-2"></span>
+                                </div>
+                            </div>
+                            <div class="accordion__item-content">
+                                <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion__item">
+                            <div class="accordion__item-trigger">
+                                <div class="trigger__text">Аккордеон триггер</div>
+                                <div class="trigger__img">
+                                    <span class="trigger__line-1"></span>
+                                    <span class="trigger__line-2"></span>
+                                </div>
+                            </div>
+                            <div class="accordion__item-content">
+                                <div class="content__text">Какой-то рандомный текст для аккордеона</div>
+                            </div>
+                        </div>
+                 -->
+            </div>
+            <div class="footer__rd">
+                <div class="footer__socials">
+                    <a href="#" class="footer__socials-item">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.0003 3.6665C19.5928 3.6665 17.2088 4.14071 14.9845 5.06205C12.7602 5.98338 10.7391 7.33381 9.0367 9.03621C5.59853 12.4744 3.66699 17.1375 3.66699 21.9998C3.66699 30.1032 8.92866 36.9782 16.207 39.4165C17.1237 39.5632 17.417 38.9948 17.417 38.4998V35.4015C12.3387 36.5015 11.257 32.9448 11.257 32.9448C10.4137 30.8182 9.22199 30.2498 9.22199 30.2498C7.55366 29.1132 9.35033 29.1498 9.35033 29.1498C11.1837 29.2782 12.1553 31.0382 12.1553 31.0382C13.7503 33.8248 16.4453 32.9998 17.4903 32.5598C17.6553 31.3682 18.132 30.5615 18.6453 30.1032C14.5753 29.6448 10.3037 28.0682 10.3037 21.0832C10.3037 19.0482 11.0003 17.4165 12.192 16.1148C12.0087 15.6565 11.367 13.7498 12.3753 11.2748C12.3753 11.2748 13.9153 10.7798 17.417 13.1448C18.8653 12.7415 20.442 12.5398 22.0003 12.5398C23.5587 12.5398 25.1353 12.7415 26.5837 13.1448C30.0853 10.7798 31.6253 11.2748 31.6253 11.2748C32.6337 13.7498 31.992 15.6565 31.8087 16.1148C33.0003 17.4165 33.697 19.0482 33.697 21.0832C33.697 28.0865 29.407 29.6265 25.3187 30.0848C25.9787 30.6532 26.5837 31.7715 26.5837 33.4765V38.4998C26.5837 38.9948 26.877 39.5815 27.812 39.4165C35.0903 36.9598 40.3337 30.1032 40.3337 21.9998C40.3337 19.5923 39.8595 17.2083 38.9381 14.984C38.0168 12.7597 36.6664 10.7386 34.964 9.03621C33.2615 7.33381 31.2405 5.98338 29.0162 5.06205C26.7919 4.14071 24.4079 3.6665 22.0003 3.6665Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__socials-item">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ic:baseline-reddit">
+                                <path id="Vector" d="M19.7079 23.9067C19.7079 22.8617 18.8462 22 17.8012 22C16.7562 22 15.8945 22.8617 15.8945 23.9067C15.8945 24.4123 16.0954 24.8973 16.453 25.2549C16.8106 25.6125 17.2955 25.8133 17.8012 25.8133C18.3069 25.8133 18.7918 25.6125 19.1494 25.2549C19.507 24.8973 19.7079 24.4123 19.7079 23.9067ZM25.8312 28.2517C25.0062 29.0767 23.2462 29.37 21.9995 29.37C20.7529 29.37 18.9929 29.0767 18.1679 28.2517C18.1233 28.2039 18.0693 28.1659 18.0094 28.1398C17.9495 28.1138 17.8849 28.1004 17.8195 28.1004C17.7542 28.1004 17.6896 28.1138 17.6296 28.1398C17.5697 28.1659 17.5158 28.2039 17.4712 28.2517C17.4235 28.2963 17.3854 28.3502 17.3594 28.4101C17.3333 28.47 17.3199 28.5347 17.3199 28.6C17.3199 28.6653 17.3333 28.73 17.3594 28.7899C17.3854 28.8498 17.4235 28.9037 17.4712 28.9483C18.7729 30.25 21.2662 30.36 21.9995 30.36C22.7329 30.36 25.2262 30.25 26.5279 28.9483C26.5756 28.9037 26.6137 28.8498 26.6397 28.7899C26.6657 28.73 26.6791 28.6653 26.6791 28.6C26.6791 28.5347 26.6657 28.47 26.6397 28.4101C26.6137 28.3502 26.5756 28.2963 26.5279 28.2517C26.3445 28.0683 26.0329 28.0683 25.8312 28.2517ZM26.1979 22C25.1529 22 24.2912 22.8617 24.2912 23.9067C24.2912 24.9517 25.1529 25.8133 26.1979 25.8133C27.2429 25.8133 28.1045 24.9517 28.1045 23.9067C28.1045 22.8617 27.2612 22 26.1979 22Z" fill="white"/>
+                                <path id="Vector_2" d="M22.0003 3.6665C11.8803 3.6665 3.66699 11.8798 3.66699 21.9998C3.66699 32.1198 11.8803 40.3332 22.0003 40.3332C32.1203 40.3332 40.3337 32.1198 40.3337 21.9998C40.3337 11.8798 32.1203 3.6665 22.0003 3.6665ZM32.6337 24.4382C32.6703 24.6948 32.6887 24.9698 32.6887 25.2448C32.6887 29.3515 27.9037 32.6882 22.0003 32.6882C16.097 32.6882 11.312 29.3515 11.312 25.2448C11.312 24.9698 11.3303 24.6948 11.367 24.4382C10.432 24.0165 9.79033 23.0815 9.79033 21.9998C9.78761 21.4741 9.9403 20.9593 10.2292 20.5201C10.5181 20.0809 10.9304 19.7368 11.4142 19.5312C11.898 19.3255 12.4318 19.2674 12.9486 19.3641C13.4653 19.4608 13.942 19.7081 14.3187 20.0748C16.1703 18.7365 18.737 17.8932 21.5787 17.8015L22.9353 11.4032C22.9537 11.2748 23.027 11.1648 23.137 11.1098C23.247 11.0365 23.3753 11.0182 23.5037 11.0365L27.9403 11.9898C28.0908 11.6847 28.3202 11.4254 28.6046 11.2389C28.8891 11.0523 29.2183 10.9452 29.5581 10.9287C29.8979 10.9123 30.2359 10.987 30.537 11.1452C30.8382 11.3034 31.0916 11.5393 31.2708 11.8285C31.4501 12.1176 31.5487 12.4494 31.5565 12.7895C31.5643 13.1296 31.4809 13.4656 31.3151 13.7627C31.1493 14.0597 30.907 14.3069 30.6134 14.4788C30.3198 14.6506 29.9855 14.7407 29.6453 14.7398C28.6187 14.7398 27.7937 13.9332 27.7387 12.9248L23.7603 12.0815L22.5503 17.8015C25.3553 17.8932 27.867 18.7548 29.7003 20.0748C29.9814 19.8065 30.3177 19.6027 30.6857 19.4779C31.0537 19.3531 31.4445 19.3102 31.8308 19.3522C32.2172 19.3942 32.5897 19.5201 32.9222 19.7211C33.2548 19.9221 33.5395 20.1933 33.7563 20.5158C33.9731 20.8383 34.1168 21.2043 34.1774 21.5881C34.238 21.972 34.214 22.3644 34.1071 22.738C34.0001 23.1116 33.8129 23.4574 33.5584 23.751C33.3039 24.0447 32.9883 24.2792 32.6337 24.4382Z" fill="white"/>
+                            </g>
+                        </svg>
+                            
+                    </a>
+                    <a href="#" class="footer__socials-item">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="ic:baseline-discord">
+                                <path id="Vector" d="M35.3279 9.77143C32.8896 8.63476 30.2496 7.80976 27.4996 7.33309C27.4755 7.33232 27.4515 7.33685 27.4293 7.34635C27.4071 7.35585 27.3873 7.3701 27.3712 7.38809C27.0412 7.99309 26.6562 8.78143 26.3996 9.38643C23.4827 8.94643 20.5164 8.94643 17.5996 9.38643C17.3429 8.76309 16.9579 7.99309 16.6096 7.38809C16.5912 7.35143 16.5362 7.33309 16.4812 7.33309C13.7312 7.80976 11.1096 8.63476 8.6529 9.77143C8.63456 9.77143 8.61623 9.78976 8.5979 9.80809C3.61123 17.2698 2.23623 24.5298 2.91456 31.7164C2.91456 31.7531 2.9329 31.7898 2.96956 31.8081C6.26956 34.2281 9.44123 35.6948 12.5762 36.6664C12.6312 36.6848 12.6862 36.6664 12.7046 36.6298C13.4379 35.6214 14.0979 34.5581 14.6662 33.4398C14.7029 33.3664 14.6662 33.2931 14.5929 33.2748C13.5479 32.8714 12.5579 32.3948 11.5862 31.8448C11.5129 31.8081 11.5129 31.6981 11.5679 31.6431C11.7696 31.4964 11.9712 31.3314 12.1729 31.1848C12.2096 31.1481 12.2646 31.1481 12.3012 31.1664C18.6079 34.0448 25.4096 34.0448 31.6429 31.1664C31.6796 31.1481 31.7346 31.1481 31.7712 31.1848C31.9729 31.3498 32.1746 31.4964 32.3762 31.6614C32.4496 31.7164 32.4496 31.8264 32.3579 31.8631C31.4046 32.4314 30.3962 32.8898 29.3512 33.2931C29.2779 33.3114 29.2596 33.4031 29.2779 33.4581C29.8646 34.5764 30.5246 35.6398 31.2396 36.6481C31.2946 36.6664 31.3496 36.6848 31.4046 36.6664C34.5579 35.6948 37.7296 34.2281 41.0296 31.8081C41.0662 31.7898 41.0846 31.7531 41.0846 31.7164C41.8912 23.4114 39.7462 16.2064 35.4012 9.80809C35.3829 9.78976 35.3646 9.77143 35.3279 9.77143ZM15.6196 27.3348C13.7312 27.3348 12.1546 25.5931 12.1546 23.4481C12.1546 21.3031 13.6946 19.5614 15.6196 19.5614C17.5629 19.5614 19.1029 21.3214 19.0846 23.4481C19.0846 25.5931 17.5446 27.3348 15.6196 27.3348ZM28.3979 27.3348C26.5096 27.3348 24.9329 25.5931 24.9329 23.4481C24.9329 21.3031 26.4729 19.5614 28.3979 19.5614C30.3412 19.5614 31.8812 21.3214 31.8629 23.4481C31.8629 25.5931 30.3412 27.3348 28.3979 27.3348Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__buttons">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.7 18C10.1 17.9167 8.75 17.3 7.65 16.15C6.55 15 6 13.6167 6 12C6 10.3333 6.58333 8.91667 7.75 7.75C8.91667 6.58333 10.3333 6 12 6C13.6167 6 15 6.55 16.15 7.65C17.3 8.75 17.9167 10.1 18 11.7L15.9 11.075C15.6833 10.175 15.2167 9.43767 14.5 8.863C13.7833 8.28833 12.95 8.00067 12 8C10.9 8 9.95833 8.39167 9.175 9.175C8.39167 9.95833 8 10.9 8 12C8 12.95 8.28767 13.7833 8.863 14.5C9.43833 15.2167 10.1757 15.6833 11.075 15.9L11.7 18ZM12.9 21.95C12.75 21.9833 12.6 22 12.45 22H12C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12V12.45C22 12.6 21.9833 12.75 21.95 12.9L20 12.3V12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20H12.3L12.9 21.95ZM20.525 22.5L16.25 18.225L15 22L12 12L22 15L18.225 16.25L22.5 20.525L20.525 22.5Z" fill="#9145FD"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.602 18.6359C11.7218 18.7091 11.8597 18.7472 12 18.7459C12.1403 18.7472 12.2782 18.7091 12.398 18.6359L13.533 17.9549C14.6313 17.2958 15.8671 16.8997 17.1439 16.7973C18.4206 16.695 19.7037 16.8892 20.893 17.3649C21.783 17.7209 22.75 17.0649 22.75 16.1079V4.44987C22.75 3.87187 22.398 3.35287 21.861 3.13787C20.3292 2.5252 18.6765 2.27501 17.0319 2.40685C15.3874 2.53869 13.7956 3.04899 12.381 3.89787L12 4.12387L11.618 3.89487C10.2034 3.04599 8.61159 2.53569 6.96707 2.40385C5.32255 2.27201 3.66982 2.5222 2.138 3.13487C1.87536 3.23998 1.65031 3.42151 1.49199 3.65596C1.33367 3.8904 1.24937 4.16698 1.25 4.44987V16.1099C1.25 17.0669 2.217 17.7219 3.107 17.3659C4.29626 16.8902 5.57939 16.696 6.85615 16.7983C8.13291 16.9007 9.36871 17.2968 10.467 17.9559L11.602 18.6359ZM2.75 4.50787V15.8949C4.13205 15.3769 5.61316 15.1775 7.08297 15.3115C8.55279 15.4456 9.97342 15.9095 11.239 16.6689L11.25 16.6749V5.42487L10.847 5.18287C9.6391 4.45803 8.28088 4.02022 6.87705 3.90319C5.47322 3.78616 4.06126 3.99304 2.75 4.50787ZM12.761 16.6679L12.75 16.6749V5.42487L13.153 5.18287C14.3609 4.45803 15.7191 4.02022 17.123 3.90319C18.5268 3.78616 19.9388 3.99304 21.25 4.50787V15.8949C19.868 15.3769 18.3868 15.1775 16.917 15.3115C15.4472 15.4456 14.0266 15.9095 12.761 16.6689V16.6679Z" fill="white"/>
+                            <path d="M9.27519 19.0421C8.28115 18.4623 7.15098 18.1567 6.00019 18.1567C4.8494 18.1567 3.71924 18.4623 2.72519 19.0421L2.62219 19.1021C2.5371 19.1517 2.46261 19.2176 2.40299 19.2961C2.34336 19.3745 2.29977 19.4639 2.2747 19.5592C2.24963 19.6544 2.24357 19.7537 2.25686 19.8513C2.27016 19.9489 2.30255 20.043 2.35219 20.1281C2.40183 20.2132 2.46775 20.2877 2.54617 20.3473C2.6246 20.4069 2.714 20.4505 2.80927 20.4756C2.90455 20.5006 3.00382 20.5067 3.10144 20.4934C3.19905 20.4801 3.2931 20.4477 3.37819 20.3981L3.48119 20.3381C4.24579 19.8922 5.11506 19.6572 6.00019 19.6572C6.88533 19.6572 7.7546 19.8922 8.51919 20.3381L9.60719 20.9721C10.3335 21.3957 11.1593 21.6189 12.0002 21.6189C12.841 21.6189 13.6668 21.3957 14.3932 20.9721L15.4812 20.3381C16.2458 19.8922 17.1151 19.6572 18.0002 19.6572C18.8853 19.6572 19.7546 19.8922 20.5192 20.3381L20.6222 20.3981C20.7941 20.4983 20.9987 20.5262 21.1911 20.4756C21.3835 20.4249 21.5479 20.2999 21.6482 20.1281C21.7484 19.9562 21.7763 19.7516 21.7257 19.5592C21.6751 19.3668 21.5501 19.2023 21.3782 19.1021L21.2752 19.0421C20.2811 18.4623 19.151 18.1567 18.0002 18.1567C16.8494 18.1567 15.7192 18.4623 14.7252 19.0421L13.6382 19.6761C13.1411 19.9662 12.5758 20.119 12.0002 20.119C11.4246 20.119 10.8593 19.9662 10.3622 19.6761L9.27519 19.0421Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__acordion">
+            <div class="accordion">
+                <ul class="footer__list accordion__item accordion__item-active">
+                    <li class="footer__list-item accordion__item-trigger">
+                        <p>HOME</p>
+                        <img src="img/accordion-icon.svg" alt="">
+                    </li>
+                    <div class="accordion__item-content">
+                        <li class="footer__list-item"><a href="#" class="footer__link">Latest projects</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Opinion pieces</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Label 1</a></li>
+                    </div>
+                </ul>
+                <ul class="footer__list accordion__item">
+                    <li class="footer__list-item accordion__item-trigger">
+                        <p>SOCIALS</p>
+                        <img src="img/accordion-icon.svg" alt="">
+                    </li>
+                    <div class="accordion__item-content">
+                        <li class="footer__list-item"><a href="#" class="footer__link">Label 1</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Label 2</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Label 3</a></li>
+                    </div>
+                </ul>
+                <ul class="footer__list accordion__item">
+                    <li class="footer__list-item accordion__item-trigger">
+                        <p>COMPANY</p>
+                        <img src="img/accordion-icon.svg" alt="">
+                    </li>
+                    <div class="accordion__item-content">
+                        <li class="footer__list-item"><a href="#" class="footer__link">Terms of Service</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </div>
+                    </ul>
+                <ul class="footer__list accordion__item">
+                    <li class="footer__list-item accordion__item-trigger">
+                        <p>CONTACTS</p>
+                        <img src="img/accordion-icon.svg" alt="">
+                    </li>
+                    <div class="accordion__item-content">
+
+                        <li class="footer__list-item list__item-labeling"><p>Support inbox</p><a href="" class="footer__link">contact@exploit.org</a></li>
+                        <li class="footer__list-item list__item-labeling"><p>Security inbox</p><a href="" class="footer__link">security@exploit.org</a></li>
+                    </div>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>
