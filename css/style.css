@@ -233,7 +233,7 @@ body.dark {
   border: 1px solid #9145FD;
   padding: 16px;
   height: 55px;
-  font-family: "neue-medium", sans-serif;
+  font-family: "neue-regular", sans-serif;
   color: #9145FD;
   font-size: 1.6rem;
   font-style: normal;
@@ -277,13 +277,6 @@ body.dark {
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
   border: 1px solid #9145FD;
-  /* &:hover{
-      background-color: transparent;
-
-      & > svg path{
-          fill: $violet;
-      }
-  } */
 }
 
 .menu__item-button-2 > svg path {
@@ -355,7 +348,6 @@ body.dark {
   position: relative;
   background: rgba(255, 255, 255, 0.116);
   height: 30px;
-  gap: 78px;
 }
 
 .banner__overlay {
@@ -376,12 +368,12 @@ body.dark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 78px;
   -webkit-animation: banner 20s linear infinite;
           animation: banner 20s linear infinite;
 }
 
 .banner__item {
+  margin: 0 39px;
   color: white;
   font-size: 1.6rem;
   font-style: normal;
@@ -400,8 +392,8 @@ body.dark {
   }
 
   to {
-    -webkit-transform: translateX(calc(-100% - 78px));
-            transform: translateX(calc(-100% - 78px));
+    -webkit-transform: translateX(-96.2%);
+            transform: translateX(-96.2%);
   }
 }
 
@@ -412,8 +404,8 @@ body.dark {
   }
 
   to {
-    -webkit-transform: translateX(calc(-100% - 78px));
-            transform: translateX(calc(-100% - 78px));
+    -webkit-transform: translateX(-96.2%);
+            transform: translateX(-96.2%);
   }
 }
 
@@ -465,7 +457,7 @@ body.dark {
   font-size: 1.6rem;
   gap: 25px;
   position: relative;
-  font-family: "neue-medium", sans-serif;
+  font-family: "neue-regular", sans-serif;
 }
 
 .intro__buttons-1 a {
@@ -712,7 +704,7 @@ body.dark {
   color: #9145FD;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 500;
+  font-family: "neue-regular", sans-serif;
   line-height: normal;
 }
 
@@ -810,6 +802,7 @@ body.dark {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  font-family: "neue-regular", sans-serif;
 }
 
 .opinion__swiper {
@@ -997,6 +990,7 @@ body.dark {
   font-size: 1.6rem;
   font-style: normal;
   line-height: normal;
+  font-family: "neue-regular", sans-serif;
 }
 
 .join__body {
