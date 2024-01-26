@@ -80,6 +80,30 @@ h6 {
   -webkit-tap-highlight-color: transparent;
 }
 
+@-webkit-keyframes banner {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-96.2%);
+            transform: translateX(-96.2%);
+  }
+}
+
+@keyframes banner {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  to {
+    -webkit-transform: translateX(-96.2%);
+            transform: translateX(-96.2%);
+  }
+}
+
 html {
   font-size: 10px;
 }
@@ -383,30 +407,6 @@ body.dark {
   font-family: "neue-light", sans-serif;
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-@-webkit-keyframes banner {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
-  to {
-    -webkit-transform: translateX(-96.2%);
-            transform: translateX(-96.2%);
-  }
-}
-
-@keyframes banner {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-
-  to {
-    -webkit-transform: translateX(-96.2%);
-            transform: translateX(-96.2%);
-  }
 }
 
 .intro {
