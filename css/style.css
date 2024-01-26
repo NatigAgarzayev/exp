@@ -1242,6 +1242,11 @@ body.dark {
   right: 96px;
   bottom: 0;
   z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .quote::after {
@@ -1335,6 +1340,11 @@ body.dark {
   position: absolute;
   right: 96px;
   bottom: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .git__body {
