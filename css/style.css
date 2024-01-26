@@ -1126,6 +1126,14 @@ body.dark {
   height: 10px;
 }
 
+.join__img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
 .join__content {
   position: absolute;
   z-index: 2;
@@ -1270,6 +1278,11 @@ body.dark {
       -ms-flex-align: center;
           align-items: center;
   gap: 51px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .quote__textbox {
