@@ -334,6 +334,14 @@ body.dark {
   z-index: 2;
 }
 
+.logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,6 +577,10 @@ body.dark {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7.47%, #FFF), color-stop(60.71%, rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(top, #FFF 7.47%, rgba(255, 255, 255, 0) 60.71%);
   background: linear-gradient(180deg, #FFF 7.47%, rgba(255, 255, 255, 0) 60.71%);
@@ -691,6 +703,11 @@ body.dark {
   position: absolute;
   right: -570px;
   top: -350px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .right__planet-2 {
@@ -698,12 +715,22 @@ body.dark {
   position: absolute;
   right: -20px;
   top: -240px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .left__planet {
   position: absolute;
   left: -570px;
   top: -350px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .left__planet-2 {
@@ -711,6 +738,11 @@ body.dark {
   position: absolute;
   left: -20px;
   top: -240px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .projects {
@@ -1304,6 +1336,14 @@ body.dark {
   z-index: 1;
 }
 
+.git__illustration {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
 .git__illustration-mobile {
   display: none;
 }
@@ -1371,6 +1411,14 @@ body.dark {
 
 .footer__st p span {
   color: #FF6914;
+}
+
+.footer__logo {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .footer__copy {
