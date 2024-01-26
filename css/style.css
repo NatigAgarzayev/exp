@@ -87,8 +87,8 @@ h6 {
   }
 
   100% {
-    -webkit-transform: translateX(-99.9%);
-            transform: translateX(-99.9%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
@@ -99,8 +99,8 @@ h6 {
   }
 
   100% {
-    -webkit-transform: translateX(-99.9%);
-            transform: translateX(-99.9%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
