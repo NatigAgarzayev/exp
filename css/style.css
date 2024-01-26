@@ -400,7 +400,7 @@ body.dark {
           align-items: center;
   gap: 25px;
   border: 1px solid #9145FD;
-  padding: 16px;
+  padding: 16px 25px 16px 16px;
   height: 55px;
   color: #9145FD;
   font-size: 1.6rem;
@@ -529,14 +529,14 @@ body.dark {
 }
 
 .banner__wrapper {
+  -webkit-animation: banner 20s linear infinite;
+          animation: banner 20s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: banner 20s linear infinite;
-          animation: banner 20s linear infinite;
 }
 
 .banner__item {
@@ -1064,6 +1064,8 @@ body.dark {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
           transform: scale(0.9);
+  position: relative;
+  right: 120px !important;
 }
 
 .join {
@@ -1180,6 +1182,7 @@ body.dark {
   font-size: 3.4rem;
   font-style: normal;
   line-height: normal;
+  font-weight: 500;
   position: absolute;
   right: 215px;
   bottom: -9px;
@@ -1886,6 +1889,7 @@ body.dark {
     line-height: normal;
     bottom: 9px;
     left: 21px;
+    font-weight: 500;
   }
 
   .join__left {
@@ -1905,6 +1909,7 @@ body.dark {
     font-size: 1.25rem;
     font-style: normal;
     line-height: normal;
+    font-weight: 500;
     top: 48px;
     right: 19px;
   }
@@ -2078,6 +2083,18 @@ body.dark {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .header {
+    padding-top: 26px;
+  }
+
+  .navbar {
+    border-bottom: none;
+  }
+
+  .intro {
+    padding-top: 0px;
   }
 
   .intro__title {
