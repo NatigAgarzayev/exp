@@ -82,25 +82,25 @@ h6 {
 
 @-webkit-keyframes banner {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
   100% {
-    -webkit-transform: translateX(-92.2%);
-            transform: translateX(-92.2%);
+    -webkit-transform: translateX(-99.9%);
+            transform: translateX(-99.9%);
   }
 }
 
 @keyframes banner {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
   100% {
-    -webkit-transform: translateX(-92.2%);
-            transform: translateX(-92.2%);
+    -webkit-transform: translateX(-99.9%);
+            transform: translateX(-99.9%);
   }
 }
 
