@@ -66,85 +66,6 @@ h6 {
   font-size: inherit;
 }
 
-.container {
-  max-width: 1580px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  /*  @media (max-width: $breakpoint1450) {
-       max-width: 1200px;
-   } */
-}
-
-* {
-  -webkit-tap-highlight-color: transparent;
-}
-
-@-webkit-keyframes banner {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes banner {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
-  font-weight: 400;
-}
-
-body.locked {
-  overflow: hidden;
-}
-
-body.dark {
-  background: #242424;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.wrap {
-  overflow: hidden;
-}
-
 /* @font-face {
     font-family: 'neue-regular';
     src: url('../fonts/neue/NeueHaasDisplayRegular.eot');
@@ -319,6 +240,90 @@ body.dark {
   src: local("../fonts/neuedesign/Neue Haas Grotesk Display Pro 26 XThin Italic"), local("NeueHaasDisplay-XThinItalic"), url("../fonts/neuedesign/NeueHaasDisplay-XThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/neuedesign/NeueHaasDisplay-XThinItalic.woff") format("woff"), url("../fonts/neuedesign/NeueHaasDisplay-XThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic;
+}
+
+.container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  /*  @media (max-width: $breakpoint1450) {
+       max-width: 1200px;
+   } */
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-webkit-keyframes banner {
+  0% {
+    -webkit-transform: translateZ(0%);
+            transform: translateZ(0%);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes banner {
+  0% {
+    -webkit-transform: translateZ(0%);
+            transform: translateZ(0%);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.marquee {
+  -webkit-animation: banner 20s linear infinite;
+          animation: banner 20s linear infinite;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 400;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+body.dark {
+  background: #242424;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrap {
+  overflow: hidden;
 }
 
 .header {
@@ -537,8 +542,6 @@ body.dark {
 }
 
 .banner__wrapper {
-  -webkit-animation: banner 20s linear infinite;
-          animation: banner 20s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,7 +551,7 @@ body.dark {
 }
 
 .banner__item {
-  margin: 0 39px;
+  padding: 0 39px;
   color: white;
   font-size: 1.6rem;
   font-style: normal;

@@ -1,4 +1,12 @@
 // Custom Scripts
+window.addEventListener("DOMContentLoaded", () => {
+    const banner = document.querySelectorAll(".banner__wrapper");
+
+    banner.forEach((item) => {
+        item.classList.add("marquee");
+    });
+});
+
 // Мобильное меню бургер
 function burgerMenu() {
     const burger = document.querySelector('.burger')
@@ -26,14 +34,14 @@ function burgerMenu() {
 }
 burgerMenu()
 
-const swiper = new Swiper('.swiper1', {
+const swiper = new Swiper(".swiper1", {
     // Optional parameters
     loop: true,
     spaceBetween: 25,
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination1',
-      clickable:true,
+        el: ".swiper-pagination1",
+        clickable: true,
     },
 
     autoplay: {
@@ -41,14 +49,13 @@ const swiper = new Swiper('.swiper1', {
         disableOnInteraction: false,
     },
     speed: 300,
-
 });
 
-const swiper2 = new Swiper('.swiper2', {
+const swiper2 = new Swiper(".swiper2", {
     // Optional parameters
     loop: true,
     grabCursor: true,
-    effect: 'coverflow',
+    effect: "coverflow",
     initialSlide: 0,
     centeredSlides: false,
     coverflowEffect: {
@@ -56,27 +63,27 @@ const swiper2 = new Swiper('.swiper2', {
         depth: 0,
         modifier: 1,
         stretch: 0,
-        slideShadows : false,
+        slideShadows: false,
     },
-    breakpoints:{
-        0:{
-            slidesPerView: 1.9
+    breakpoints: {
+        0: {
+            slidesPerView: 1.9,
         },
         480: {
             slidesPerView: 1.9,
-        }
+        },
     },
     pagination: {
-      el: '.swiper-pagination2',
-      clickable:true,
+        el: ".swiper-pagination2",
+        clickable: true,
     },
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
     speed: 300,
-
 });
+
 // Аккордеон
 function accordion() {
     const items = document.querySelectorAll('.accordion__item-trigger')
