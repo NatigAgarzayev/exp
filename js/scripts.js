@@ -1,11 +1,46 @@
 // Custom Scripts
-window.addEventListener("DOMContentLoaded", () => {
+/* window.addEventListener("DOMContentLoaded", () => {
     const banner = document.querySelectorAll(".banner__wrapper");
 
     banner.forEach((item) => {
         item.classList.add("marquee");
     });
+}); */
+
+/* let currentScroll = 0;
+let isScrollingDown = true; */
+
+let tween = gsap
+    .to(".banner__wrapper", {
+        xPercent: -100,
+        repeat: -1,
+        duration: 20,
+        ease: "linear",
+    })
+    .totalProgress(0.5);
+
+gsap.set(".banner__wrapper", { xPercent: 0 });
+
+/* const swiper = new Swiper(".swiper3", {
+    loop: true,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 4,
+    spaceBetween: 39,
+    speed: 5000,
+    grabCursor: false,
+    breakpoints: {
+        0: {
+            speed: 1000,
+        },
+        600: {
+            speed: 2000,
+        },
+    },
 });
+ */
 
 // Мобильное меню бургер
 function burgerMenu() {
