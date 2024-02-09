@@ -56,25 +56,41 @@ const swiper = new Swiper(".swiper1", {
 
 const swiper2 = new Swiper(".swiper2", {
     loop: true,
-    setWrapperSize: true,
     grabCursor: true,
     effect: "coverflow",
-    slideNextClass: "swiper2-next-slide",
-    initialSlide: 0,
+    // slideNextClass: "swiper2-next-slide",
+    // slidePrevClass: "swiper2-prev-slide",
+    loopAdditionalSlides: 1,
     centeredSlides: false,
-    coverflowEffect: {
-        rotate: 0,
-        depth: 0,
-        modifier: 1,
-        stretch: 0,
-        slideShadows: false,
-    },
+    slidesPerView: 1,
+
     breakpoints: {
         0: {
-            slidesPerView: 1.9,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 140,
+                depth: 120,
+                modifier: 1,
+                slideShadows: false,
+            },
         },
         480: {
-            slidesPerView: 1.9,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 300,
+                depth: 120,
+                modifier: 1,
+                slideShadows: false,
+            },
+        },
+        560: {
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 400,
+                depth: 120,
+                modifier: 1,
+                slideShadows: false,
+            },
         },
     },
     pagination: {
@@ -85,7 +101,7 @@ const swiper2 = new Swiper(".swiper2", {
         delay: 5000,
         disableOnInteraction: false,
     },
-    speed: 300,
+    speed: 400,
 });
 
 // Аккордеон
