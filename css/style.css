@@ -2069,6 +2069,14 @@ body.dark {
 }
 
 @media (max-width: 580px) {
+  .join__text-4 {
+    left: 40px;
+  }
+
+  .join__text-5 {
+    right: 40px;
+  }
+
   .git {
     padding: 32px 0;
   }
