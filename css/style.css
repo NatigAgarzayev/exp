@@ -66,54 +66,6 @@ h6 {
   font-size: inherit;
 }
 
-/* @font-face {
-    font-family: 'neue-regular';
-    src: url('../fonts/neue/NeueHaasDisplayRegular.eot');
-    src: url('../fonts/neue/NeueHaasDisplayRegular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/neue/NeueHaasDisplayRegular.woff2') format('woff2'),
-         url('../fonts/neue/NeueHaasDisplayRegular.woff') format('woff'),
-         url('../fonts/neue/NeueHaasDisplayRegular.ttf')  format('truetype'),
-         url('../fonts/neue/NeueHaasDisplayRegular.svg#Neue Haas Grotesk Display Pro') format('svg');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'neue-medium';
-    src: url('../fonts/neue/NeueHaasDisplayMedium.eot');
-    src: url('../fonts/neue/NeueHaasDisplayMedium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/neue/NeueHaasDisplayMedium.woff2') format('woff2'),
-         url('../fonts/neue/NeueHaasDisplayMedium.woff') format('woff'),
-         url('../fonts/neue/NeueHaasDisplayMedium.ttf')  format('truetype'),
-         url('../fonts/neue/NeueHaasDisplayMedium.svg#Neue Haas Grotesk Display Pro') format('svg');
-         font-weight: 500;
-         font-display: swap;
-}
-
-@font-face {
-    font-family: 'neue-bold';
-    src: url('../fonts/neue/NeueHaasDisplayBold.eot');
-    src: url('../fonts/neue/NeueHaasDisplayBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/neue/NeueHaasDisplayBold.woff2') format('woff2'),
-         url('../fonts/neue/NeueHaasDisplayBold.woff') format('woff'),
-         url('../fonts/neue/NeueHaasDisplayBold.ttf')  format('truetype'),
-         url('../fonts/neue/NeueHaasDisplayBold.svg#Neue Haas Grotesk Display Pro') format('svg');
-         font-weight: 700;
-         font-display: swap;
-}
-
-@font-face {
-    font-family: 'neue-light';
-    src: url('../fonts/neue/NeueHaasDisplayLight.eot');
-    src: url('../fonts/neue/NeueHaasDisplayLight.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/neue/NeueHaasDisplayLight.woff2') format('woff2'),
-         url('../fonts/neue/NeueHaasDisplayLight.woff') format('woff'),
-         url('../fonts/neue/NeueHaasDisplayLight.ttf')  format('truetype'),
-         url('../fonts/neue/NeueHaasDisplayLight.svg#Neue Haas Grotesk Display Pro') format('svg');
-         font-weight: 300;
-         font-display: swap;
-} */
-
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
   src: url("../fonts/neuedesign/NeueHaasDisplay-BlackItalic.eot");
@@ -1127,6 +1079,7 @@ body.dark {
   padding: 50px 0;
   position: relative;
   z-index: 999999999;
+  overflow: hidden;
 }
 
 .join::before {
@@ -1195,8 +1148,6 @@ body.dark {
   margin-top: 50px;
   padding: 18px 50px;
   border: 1px solid #002D44;
-  border-radius: 4px;
-  height: 50px;
   background: #002D44;
   color: #FFF;
   font-size: 1.6rem;
@@ -1211,53 +1162,79 @@ body.dark {
   display: flex;
   gap: 10%;
   height: 210px;
-  background: url("../img/join-bg.webp") no-repeat center top;
+  font-size: clamp(0.5rem, 0.8vw, 1rem);
 }
 
-.join__left {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-  background: url("../img/left-side-tags.webp") no-repeat center right/contain;
-  position: relative;
-}
-
-.join__left-tag {
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 4rem;
-  font-style: normal;
-  line-height: normal;
-  font-weight: 500;
+.join__text {
   position: absolute;
-  left: 52px;
-  top: 53px;
 }
 
-.join__left-tag-2 {
-  display: none;
-}
-
-.join__right {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-  background: url("../img/right-side-tags.webp") no-repeat center left/contain;
-  position: relative;
-}
-
-.join__right-tag {
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 3.4rem;
-  font-style: normal;
-  line-height: normal;
+.join__text-1 {
+  color: #E4F3FB;
   font-weight: 500;
-  position: absolute;
-  right: 215px;
-  bottom: -9px;
+  top: 256px;
+  left: 57px;
+  font-size: 2.4em;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.1;
 }
 
-.join__right-tag-2 {
-  display: none;
+.join__text-2 {
+  color: #95CEEB;
+  font-size: 4.8em;
+  font-weight: 400;
+  line-height: 59px;
+  top: 106px;
+  left: 93px;
+}
+
+.join__text-3 {
+  color: #95CEEB;
+  font-size: 5.1em;
+  font-weight: 400;
+  line-height: 63px;
+  top: 188px;
+  left: 361px;
+  opacity: 0.4;
+}
+
+.join__text-4 {
+  color: #95CEEB;
+  font-size: 4.3em;
+  font-weight: 400;
+  line-height: 54px;
+  top: 44px;
+  left: 526px;
+}
+
+.join__text-5 {
+  color: #95CEEB;
+  font-size: 4.3em;
+  font-weight: 400;
+  line-height: 54px;
+  top: 44px;
+  right: 465px;
+  opacity: 0.5;
+}
+
+.join__text-6 {
+  color: #95CEEB;
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: 43px;
+  top: 197px;
+  right: 333px;
+}
+
+.join__text-7 {
+  color: #95CEEB;
+  font-size: 3.3em;
+  font-weight: 400;
+  line-height: 41px;
+  top: 114px;
+  right: 71px;
+  opacity: 0.4;
 }
 
 .quote {
@@ -1554,6 +1531,23 @@ body.dark {
   gap: 40px;
 }
 
+.footer__socials-item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__socials-item:nth-child(2) > svg {
+  width: 40px;
+  height: 40px;
+}
+
 .footer__socials-item path {
   fill: white;
   -webkit-transition: fill 0.2s ease;
@@ -1775,22 +1769,6 @@ body.dark {
             flex-direction: column;
   }
 
-  .join__body {
-    background: url("../img/join-bg.webp") no-repeat center top/cover;
-  }
-
-  .join__left-tag {
-    left: 32px;
-    top: 33px;
-    font-size: 2.5rem;
-  }
-
-  .join__right-tag {
-    right: 115px;
-    bottom: -9px;
-    font-size: 2rem;
-  }
-
   .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1987,52 +1965,6 @@ body.dark {
 
   .join__body {
     height: 210px;
-    background-size: 200%;
-    background-position: center center;
-  }
-
-  .join__left-tag {
-    font-size: 1.58rem;
-    left: 8px;
-    top: 20px;
-  }
-
-  .join__left-tag-2 {
-    position: absolute;
-    display: block;
-    color: rgba(0, 0, 0, 0.28);
-    font-size: 1.25rem;
-    font-style: normal;
-    line-height: normal;
-    bottom: 9px;
-    left: 21px;
-    font-weight: 500;
-  }
-
-  .join__left {
-    background: none;
-  }
-
-  .join__right-tag {
-    font-size: 1.58rem;
-    right: 13px;
-    bottom: 10px;
-  }
-
-  .join__right-tag-2 {
-    position: absolute;
-    display: block;
-    color: rgba(0, 0, 0, 0.28);
-    font-size: 1.25rem;
-    font-style: normal;
-    line-height: normal;
-    font-weight: 500;
-    top: 48px;
-    right: 19px;
-  }
-
-  .join__right {
-    background: none;
   }
 
   .footer__acordion {
@@ -2337,10 +2269,6 @@ body.dark {
 
   .swiper-slide:not(.swiper-slide-active) .opinion__swiper-item {
     background: rgba(53, 53, 53, 0.5);
-  }
-
-  .join__body {
-    background-size: 190%;
   }
 
   .quote {
